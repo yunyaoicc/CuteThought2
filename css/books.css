@@ -1,0 +1,96 @@
+/* 初始化样式 */
+* {
+	/* 内外边距为0 */
+	margin: 0;
+	padding: 0;
+	/* 去掉没必要的样式 */
+	list-style: none;
+	text-decoration: none;
+}
+ 
+.nav {
+	height: 60px;
+	/* 这里做一个渐变的导航栏 */
+	background: linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+ 
+.navlist li {
+	/* 通过左浮动,让列表变成横排 */
+	float: left;
+	height: 60px;
+	width: 100px;
+	/* 让文本垂直居中 */
+	line-height: 60px;
+	text-align: center;
+}
+ 
+@font-face {
+	font-family: 'SimKai';
+	/* 自定义字体名称 */
+	src: url('../fonts/simkai.woff2') format('truetype');
+	/* 字体文件路径和格式 */
+}
+ 
+.navlist a {
+	/* 超链接改为黑色,字体楷体,设置成块元素 */
+	color: black;
+	font-family: 'SimKai', sans-serif;
+	/* 使用自定义字体，如果无法加载则回退到sans-serif */
+	display: block;
+}
+ 
+.navlist {
+	/* 设置列表宽800,然后居中显示 */
+	width: 800px;
+	margin: auto;
+}
+ 
+.navlist a:hover {
+	/* 设置鼠标悬停背景色变化 */
+	/* background: linear-gradient(#00c230, #00c991); */
+	color: deeppink;
+}
+ 
+body {
+	background: linear-gradient(to right, #2c3e50, #bdc3c7);
+}
+ 
+.pnyulh {
+	/* 《好看的皮囊不如有趣的灵魂》 */
+	height: 196px;
+	margin-left: 160px;
+	padding-top: 6px;
+}
+ 
+.pnyulh:hover {
+	background: linear-gradient(to right, #2c3e50, #bdc3c8);
+	/* background: #2c3e50; */
+}
+ 
+.pnyulh a {
+	display: flex;
+	align-items: center;
+}
+ 
+.pnyulh a img {
+	width: 120px;
+	/* 设定图片宽度 */
+	height: auto;
+	/* 根据宽度自动调整高度 */
+	margin-right: 20px;
+	/* 图片与文字之间的间距 */
+	margin-left: 10px;
+}
+ 
+.pnyulh a p {
+	font-size: 18px;
+	/* 设定文字大小 */
+	font-family: '楷体';
+	font-weight: bold;
+	color: #000;
+	/* 设定文字颜色 */
+}
+
+.img1 {
+			padding:20;
+}
