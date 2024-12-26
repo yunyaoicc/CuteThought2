@@ -1,0 +1,77 @@
+body {
+	background: hsl(0deg, 0%, 10%);
+	color: hsl(0deg, 0%, 70%);
+}
+ 
+main {
+	width: 100vw;
+	max-width: 100%;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+}
+ 
+main>div {
+	max-width: 1000px;
+	padding: 24px;
+}
+ 
+body::-webkit-scrollbar {
+	width: 3px;
+	background: linear-gradient(to bottom,
+			hsl(0deg, 100%, 50%, 0.4) 0%,
+			hsl(40deg, 100%, 50%) 20%,
+			hsl(80deg, 100%, 50%) 30%,
+			hsl(120deg, 100%, 50%) 40%,
+			hsl(180deg, 100%, 50%) 50%,
+			hsl(250deg, 100%, 50%) 80%,
+			hsl(320deg, 100%, 50%, 0.4) 100%);
+	border-radius: 4px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+	background: linear-gradient(to bottom,
+			hsl(0deg, 100%, 50%, 0) 0%,
+			hsl(0deg, 100%, 100%, 0.9) 20%,
+			hsl(0deg, 100%, 100%, 0.9) 80%,
+			hsl(0deg, 100%, 50%, 0) 200%);
+	border-radius: 100%;
+}
+ 
+@font-face {
+	font-family: 'SimKai';
+	/* 自定义字体名称 */
+	src: url('../fonts/simkai.woff2') format('truetype');
+	/* 字体文件路径和格式 */
+}
+ 
+p {
+	line-height: 1.5em;
+	font-family: 'SimKai', sans-serif;
+	/* 使用自定义字体，如果无法加载则回退到sans-serif */
+	font-size: 18px;
+	margin: 0; /* 重置段落的外边距 */
+	position: relative; /* 设置相对定位，为伪元素定位做准备 */
+}
+ 
+a{
+	text-decoration: none;
+	color: hsl(0deg, 0%, 70%);
+}
+ 
+a:hover {
+    color: pink;
+}
+ 
+.first-p::before {
+    content: "●"; /* 插入实心圆点 */
+    position: absolute; /* 设置绝对定位 */
+    left: -1.8em; /* 将圆点向左移动，使其位于文本前面 */
+	top: -0.08em; /* 将圆点向上移动 */
+    color: white; /* 设置圆点颜色 */
+	font-size: 0.4em; /* 设置圆点大小 */
+  }
+  
+img {
+	 width: 80%; 
+  }
