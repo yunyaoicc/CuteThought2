@@ -1,4 +1,8 @@
-run = "index.html"
+run = "{
+  "runCommand": "npx live-server",
+  "workingDirectory": "./"
+}
+"
 language = "node"
 
 [env]
